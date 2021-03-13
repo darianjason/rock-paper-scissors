@@ -1,37 +1,62 @@
 html {
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     background-color: #221551; /* PANTONE 274 C */
-
 }
 
-.selections {
-    display: flex;
-    flex: 1;
+.page {
     min-height: 100vh;
+    min-width: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex {
+    /* border: 2px solid turquoise; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selection-container {
+    min-height: 40vh;
+    justify-self: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .selection {
+    width: 16vh;
+    flex-direction: column;
+    align-items: center;
     background: none;
     border: none;
+    /* border: 2px solid white; */
     outline: none;
     fill: white;
-    width: 16vh;
+    transition: all 0.4s;
 }
 
-.selection:hover {
-    transform: scale(1.25, 1.25);
+.selection-name {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    /* font-size: 24px; */
+    margin-top: 10%;
+    /* transform: translateY(75%); */
 }
 
-#rock:hover {
-    fill: lightsalmon;
+.result-container {
+    min-width: 100vw;
+    justify-content: space-evenly;
 }
 
-#paper:hover {
-    fill: aquamarine;
+.result {
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
 }
 
-#scissors:hover {
-    fill: khaki;
+.score {
+    font-size: 200%;
+    padding-top: 10%;
 }
